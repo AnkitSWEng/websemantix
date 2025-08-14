@@ -55,7 +55,6 @@ fetch("/api/visitors")
   const formData = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
-    password: document.getElementById("password").value,
     country: document.getElementById("country").value,
     subscribe: document.querySelector('input[name="subscribe"]').checked
   };
