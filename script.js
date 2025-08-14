@@ -47,3 +47,28 @@ fetch("/api/visitors")
     document.getElementById("visitorCount").textContent = data.count;
   })
   .catch(err => console.error("Error fetching visitor count", err));
+
+
+  document.getElementById("userForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    password: document.getElementById("password").value,
+    country: document.getElementById("country").value,
+    subscribe: document.querySelector('input[name="subscribe"]').checked
+  };
+
+  const res = await fetch("/api/formsubmit", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData)
+  });
+
+  const data = await res.json();
+  document.getElementById("statusMsg").textContent = res.ok
+    ? "✅ Form submitted for review."
+    : `❌ ${data.error}`;
+});
+ 
