@@ -181,3 +181,7 @@ footer {
 .animate-move {
   transform: translateX(150px);
 }
+li[contenteditable="true"] {
+  outline: 2px dashed #FE8C00;
+  padding: 2px;
+}
