@@ -7,10 +7,7 @@
   <title>Semantic HTML Map</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/x-icon" href="resources/semantix.png">
-
-  
 </head>
-
 <body>
   <header>
     <div class="logo">WebSemantix</div>
@@ -99,6 +96,34 @@
     </footer>
   </article>
 </section>
+<section id="hero">
+  <h1 id="mainTitle">Welcome to WebSemantix</h1>
+  <p id="tagline">Explore tutorials, articles, and <mark>resources</mark>.</p>
+  <button id="changeTitleBtn">Change Title</button>
+</section>
+<section id="dynamicList">
+  <h2>Dynamic List</h2>
+  <ul id="itemList">
+    <li>HTML Basics</li>
+    <li>CSS Styling</li>
+  </ul>
+  <input type="text" id="newItem" placeholder="Add new item">
+  <button id="addItemBtn">Add Item</button>
+  <button id="removeLastBtn">Remove Last</button>
+</section>
+
+<section id="toggleSection">
+  <h2>Toggle Highlight</h2>
+  <p id="toggleText">Click the button to highlight this text.</p>
+  <button id="toggleBtn">Toggle Highlight</button>
+</section>
+
+<section id="animationSection">
+  <h2>Animate Box</h2>
+  <div id="animateBox"></div>
+  <button id="animateBtn">Animate</button>
+</section>
+
     <!-- Media Section -->
     <section id="media">
       <h2>Media Showcase</h2>
@@ -174,7 +199,7 @@
         <li><a href="#tips">HTML Tips</a></li>
         <li><a href="#tools">CSS Tools</a></li>
       </ul>
-      <p>👋 You are visitor #<span id="visitorCount">Loading...</span></p>
+      <p>👋 You are visitor number:<span id="visitorCount">Loading...</span></p>
     </aside>
   </main>
 
@@ -184,5 +209,7 @@
   </footer>
   <script src="script.js"></script>
   <script src="versioncheck.js"></script>
+  <script src="togglescript.js"></script>
+  
 </body>
 </html>
