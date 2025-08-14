@@ -17,5 +17,5 @@ async function checkVersion() {
 }
 
 // Check every 90 seconds
-setInterval(checkVersion, 90000);
+setInterval(checkVersion, 9000000);
 checkVersion();
