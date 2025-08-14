@@ -39,3 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+fetch("/api/visitors")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("visitorCount").textContent = data.count;
+  })
+  .catch(err => console.error("Error fetching visitor count", err));
