@@ -24,8 +24,8 @@ export default async function handler(req, res) {
 `;
 
     await octokit.issues.create({
-      owner: "YOUR_GITHUB_USERNAME",
-      repo: "YOUR_REPO_NAME",
+      owner: "ankitsweng",
+      repo: "websemantix",
       title: `📩 New Form Submission - ${name}`,
       body: bodyContent,
       labels: ["form-pending-review"],
