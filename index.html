@@ -1,1 +1,186 @@
-# websemantics
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A comprehensive semantic HTML example" />
+  <title>Semantic HTML Map</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="resources/semantix.png">
+
+  
+</head>
+
+<body>
+  <header>
+    <div class="logo">WebSemantix</div>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <h1>Welcome to WebSemantix</h1>
+      <p>Explore tutorials, articles, and <mark>resources</mark>.</p>
+      <progress value="70" max="100">70%</progress> Site completion progress
+    </section>
+
+    <!-- Articles -->
+<section id="articles">
+  <article>
+    <header>
+      <h2>Understanding HTML Semantics</h2>
+      <time datetime="2025-08-14">Aug 14, 2025</time>
+    </header>
+
+    <p>
+      Semantic HTML helps browsers, 
+      <abbr title="Search Engine Optimization">SEO</abbr> tools, 
+      and assistive technologies understand your content better.
+    </p>
+
+    <h3>Why Using the Right HTML Tags Matters for Search and Accessibility</h3>
+    <p>
+      When building a website, the way you label different parts of the page can make a big difference.
+      Semantic HTML means using meaningful tags—like 
+      <code>&lt;header&gt;</code> for the top of the page, 
+      <code>&lt;nav&gt;</code> for navigation menus, 
+      and <code>&lt;footer&gt;</code> for the bottom. 
+      These labels help both people and technology understand your site better.
+    </p>
+
+    <ul>
+      <li>
+        <h4>Easier for People Using Screen Readers and Assistive Tools</h4>
+        <p>
+          Not everyone uses a mouse or can see a screen clearly.  
+          Some people rely on tools like screen readers, which read content out loud.  
+          When a website uses the right tags—like marking the main content with 
+          <code>&lt;main&gt;</code> or using proper headings—these tools can guide users 
+          more smoothly through the page.  
+          This makes your site easier to navigate and more inclusive for people with disabilities.
+        </p>
+      </li>
+
+      <li>
+        <h4>Helps Search Engines Understand Your Content</h4>
+        <p>
+          Search engines don’t just look at the words on your page—they also analyze how the content 
+          is organized behind the scenes.  
+          When you use clear, meaningful tags (like <code>&lt;article&gt;</code> for blog posts or 
+          headings in the right order), search engines can better understand the structure of your content.  
+          This can improve how your site appears in search results and make it easier for people to find.
+        </p>
+        <p>
+          Semantic HTML supports things that search engines care about—like clear structure, easy navigation, 
+          and helpful content—making your site more effective overall.
+        </p>
+      </li>
+
+      <li>
+        <h4>Keeps Your Website Organized and Easier to Maintain</h4>
+        <p>
+          Using meaningful tags keeps your website’s code clean and easy to understand.  
+          This makes it simpler to update, fix, or redesign in the future—especially if multiple people are 
+          working on it.  
+          A well-structured site is also more likely to work well on different devices, like phones and tablets.
+        </p>
+      </li>
+    </ul>
+
+    <footer>
+      <p>Written by <address>Ankit Kumar</address></p>
+    </footer>
+  </article>
+</section>
+    <!-- Media Section -->
+    <section id="media">
+      <h2>Media Showcase</h2>
+
+      <figure>
+        <video controls width="480">
+          <source src="sample-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>HTML5 Video Example</figcaption>
+      </figure>
+
+      <figure>
+        <audio controls>
+          <source src="sample-audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>HTML5 Audio Example</figcaption>
+      </figure>
+
+      <meter value="0.8" min="0" max="1">80%</meter> Storage usage
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="#thankyou" method="GET">     
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <label for="country">Country:</label>
+          <input list="countries" id="country" name="country" placeholder="Start typing...">
+          <datalist id="countries">
+            <option value="India">
+            <option value="United States">
+            <option value="United Kingdom">
+          </datalist>
+
+          <label>
+            <input type="checkbox" name="subscribe" /> Subscribe to newsletter
+          </label>
+        </fieldset>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Thank You Message (CSS-only reveal) -->
+    <section id="thankyou">
+      <h2>✅ Thank you for submitting!</h2>
+      <p>Your form was received on <time datetime="2025-08-14">August 14, 2025</time>.</p>
+    </section>
+
+    <!-- Collapsible Info -->
+    <details>
+      <summary>More about this site</summary>
+      <p>This site demonstrates advanced HTML5 semantics, form handling, and accessibility features.</p>
+    </details>
+
+    <!-- Sidebar -->
+    <aside>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#tips">HTML Tips</a></li>
+        <li><a href="#tools">CSS Tools</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WebSemantix. All rights reserved.</p>
+    <p><a href="#privacy">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
