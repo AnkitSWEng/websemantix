@@ -162,7 +162,15 @@
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
           <label for="phone">Phone:</label>
-          <input type="phone" id="phone" name="phone" required />
+          <input 
+  type="tel" 
+  id="phone" 
+  name="phone" 
+  placeholder="+91-9876543210"
+  pattern="^\+?[0-9]{1,4}[- ]?[0-9]{6,14}$" 
+  title="Enter a valid phone number (e.g., +91-9876543210)" 
+  required 
+/>
 
           <label for="country">Country:</label>
           <input list="countries" id="country" name="country" placeholder="Start typing...">
