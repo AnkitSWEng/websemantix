@@ -162,16 +162,7 @@
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
           <label for="phone">Phone:</label>
-         <input 
-  type="tel" 
-  id="phone" 
-  name="phone" 
-  placeholder="+91-9876543210"
-  pattern="^(\+91[- ]?)?[0-9]{10}$" 
-  title="Enter a valid 10-digit Indian phone number, optionally with +91" 
-  required 
-/>
-
+         <input type="tel" id="phone" name="phone" placeholder="+91-9876543210" pattern="^(\+91[- ]?)?[0-9]{10}$" title="Enter a valid 10-digit Indian phone number, optionally with +91" maxlength="10" oninput="this.value = this.value.replace(/[^0-9+ -]/g, '')"required />
           <label for="country">Country:</label>
           <input list="countries" id="country" name="country" placeholder="Start typing...">
           <datalist id="countries">
