@@ -61,9 +61,13 @@ section {
   margin-bottom: 2rem;
 }
 
-h1, h2, h3 {
+h1, h3 {
   margin-bottom: 0.5rem;
   color: #3399f3;
+}
+h2 {
+  margin-bottom: 0.75rem;
+  color: #f6f6f6;
 }
 
 p {
