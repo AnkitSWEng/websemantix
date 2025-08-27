@@ -130,23 +130,28 @@
     <section id="media">
       <h2>Media Showcase</h2>
 
-      <figure>
-        <video controls width="480">
-          <source src="resources/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <figcaption>HTML5 Video Example</figcaption>
-      </figure>
+<figure>
+  <div class="vsc-controller"></div>
+  <video controls class="responsive-video">
+    <source src="resources/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <figcaption>HTML5 Video Example</figcaption>
+</figure>
 
-      <figure>
-        <audio controls>
-          <source src="resources/audio.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <figcaption>HTML5 Audio Example</figcaption>
-      </figure>
+<figure>
+  <div class="vsc-controller"></div>
+  <audio controls class="responsive-audio">
+    <source src="resources/audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <figcaption>HTML5 Audio Example</figcaption>
+</figure>
 
-      <meter value="0.8" min="0" max="1">80%</meter> Storage usage
+<div class="meter-wrapper">
+  <meter value="0.8" min="0" max="1">80%</meter> Storage usage
+</div>
+
     </section>
 
     <!-- Contact Form -->
