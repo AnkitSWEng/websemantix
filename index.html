@@ -129,19 +129,27 @@
     <!-- Media Section -->
     <section id="media">
       <h2>Media Showcase</h2>
-
 <figure>
-  <div class="vsc-controller"></div>
-  <video controls class="responsive-video">
-    <source src="resources/video.mp4" type="video/mp4">
+  <div class="vsc-controller" aria-hidden="true"></div>
+  <video
+    controls
+    class="responsive-video"
+    aria-labelledby="video-caption"
+    aria-describedby="video-description"
+  >
+    <source src="resources/video.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <figcaption>HTML5 Video Example</figcaption>
+  <figcaption id="video-caption">Child playing on tablet.</figcaption>
+  <div id="video-description" hidden>
+    A child is sitting cross-legged on the floor, wearing a yellow shirt and blue jeans, 
+    intently playing a game on a tablet device.
+  </div>
 </figure>
 
 <figure>
   <div class="vsc-controller"></div>
-  <audio controls class="responsive-audio">
+  <audio controls class="responsive-audio" aria-labelledby="audio-caption">
     <source src="resources/audio.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
